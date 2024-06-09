@@ -1,0 +1,11 @@
+body {
+  background-image: url("../src/assets/images/astarion-baldurs-gate-3.png");
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: 100%;
+}
+
+code {
+  font-family: 'Olde-English',
+    monospace;
+}

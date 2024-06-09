@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Lorem ipsum generator using Astarion's lines from Baldur's Gate 3."
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Astarion Ipsum</title>
+    <link rel='stylesheet' type='text/css' href='cursor-style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <style type="text/css">
+      body {
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #000000;
+        justify-content: center;
+        align-items: center;
+      }
+      </style>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+  <script type="module">
+    import { emojiCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+  
+    new emojiCursor({ emoji: ["🩸", "🩸", "🩸"] });
+  </script>
+</html>

@@ -1,0 +1,61 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-right: 20px;
+    height: 70px;
+    align-items: center;
+    z-index: 1000; /* above all other content */
+    display: flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(180deg, black, transparent);
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.active {
+    position: relative;
+    text-align: center;
+    width: 100px;
+    color: rgb(234, 206, 206);
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/flag.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 1;
+    animation: fade-in 1s;
+    z-index: -1;
+}
+
+.passive {
+    position: relative;
+    text-align: center;
+    width: 100px;
+    color: rgb(155, 9, 9);
+} 
+
+.passive::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: fade-out 1s;
+    z-index: -1;
+}
+
+.passive:hover {
+    color: rgb(234, 206, 206);
+}

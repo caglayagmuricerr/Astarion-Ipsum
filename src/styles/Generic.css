@@ -1,0 +1,159 @@
+* {
+   font-family: Olde-English;
+   font-weight: 100;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-xl {
+    font-size: 4em !important;
+}
+
+.txt-l {
+    font-size: 3em;
+}
+
+.txt-m {
+    font-size: 2em;
+    
+}
+
+.txt-s {
+    font-size: 1em;
+}
+
+.txt-xs {
+    font-size: 0.5em;
+}
+
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.center.loaded {
+    display: block;
+}
+
+.center > * { /* applying margin to all children of .center */
+    margin-bottom: 20px;
+}
+
+.padding-top-50 {
+    padding-top: 50px;
+}
+
+  /* -------------------------------------------------------------- */
+ /* ---------------- BOX */ /* BUTTON */ /* INPUT ---------------- */
+/* -------------------------------------------------------------- */
+
+.box {
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(23, 23, 23);
+    border: 5px solid rgb(147, 33, 33);
+    border-style: ridge;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+@media all and (max-width: 1720px) and (min-width: 1520px) {
+    .box {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+}
+
+@media all and (max-width: 1520px) and (min-width: 1320px) {
+    .box {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+
+@media all and (max-width: 1320px) and (min-width: 1120px) {
+    .box {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+@media all and (max-width: 1120px) and (min-width: 920px) {
+    .box {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+@media all and (max-width: 920px) and (min-width: 720px) {
+    .box {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media all and (max-width: 720px) and (min-width: 520px) {
+    .box {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media all and (max-width: 520px) {
+    .box {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.button-style {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: rgb(178, 48, 48);
+    background-color: rgb(23, 23, 23);
+    border: 3px solid rgb(178, 48, 48);
+    border-style: ridge;
+    border-radius: 10px;
+    margin: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button-style:hover {
+    color: rgb(23, 23, 23);
+    background-color: rgb(178, 48, 48);
+}
+
+.button-style:active {
+    background-color: rgb(23, 23, 23);
+    color: rgb(178, 48, 48);
+}
+
+input{
+    font-size: 2rem;
+    color: rgb(178, 48, 48);
+    background-color: rgb(23, 23, 23);
+    border: 3px solid rgb(178, 48, 48);
+    border-style: ridge;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 1px;
+    padding-bottom: 4px;
+    margin: 10px;
+    width: 50px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
